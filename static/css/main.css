@@ -1,0 +1,190 @@
+body {
+    background-color: #1c1e21;
+}
+
+.main-font {
+    font-family: 'Jost', sans-serif;
+    font-size: 2vw;
+    color: #f4f8f7;
+}
+
+.window {
+    height: 100vh;
+    width: 100%;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.middle-right-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.middle-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading {
+    font-family: 'Comfortaa', cursive;
+    font-size: 5vw;
+    color: #f4f8f7;
+}
+
+.slide-top-d0 {
+    animation: slide-top 1s ease-out 0s 1 normal both;
+}
+
+.slide-top-d1 {
+    animation: slide-top 1s ease-out 1s 1 normal both;
+}
+
+@keyframes slide-top {
+    from {
+        opacity: 0;
+        transform: translateY(-75%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-d1 {
+    animation: fade 1s ease-in 1s 1 normal both;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.img-small {
+    height: 35vh;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.slide-left {
+    animation: slide-left 1s ease-out 0s 1 normal both;
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.img-container > img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    border: 1px solid black;
+    transition: opacity 1s;
+}
+
+.img-container:hover > img {
+    opacity: 1;
+}
+
+.img-container > a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 0;
+    transition: opacity 1s;
+}
+
+.img-container:hover > a {
+    opacity: 0;
+}
+
+.underline {
+    animation: underline 0.5s ease-out 2s 1 normal both;
+    background-color: #f3dba4;
+    left: 27%;
+    top: 32%;
+    height: 1vh;
+    position: absolute;
+    border-radius: 50%;
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.card {
+    border-color: black;
+}
+
+.card-header-tabs a {
+    color: rgba(0, 0, 0, 0.5);
+    transition: font-size 0.5s, background-color 0.5s;
+}
+
+.card-header-tabs a.active {
+    font-size: 17px;
+}
+
+.card-header-tabs a:hover {
+    font-size: 17px;
+    color: #495057;
+}
+
+
+.flex-column a {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+    height: calc(100%/8);
+    transition: font-size 0.5s, background-color 0.5s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-column a.active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 239, 240);
+    font-size: 17px;
+}
+
+.flex-column a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 243, 244);
+    font-size: 17px;
+}
