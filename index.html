@@ -30,10 +30,10 @@
         </div>
         <div class="fade-d1 middle img-container w-100 h-100 p-0">
             <img src="static/img/projects.jpg" alt="">
-            <a href="#projects" class="middle btn main-font">Projects and Publications</a>
+            <a href="#projects" class="middle btn main-font">Other Projects</a>
         </div>
         <div class="fade-d1 middle img-container w-100 h-100 p-0">
-            <img src="static/img/bees.gif" alt="">
+            <img src="static/img/bees.jpg" alt="">
             <a href="#about" class="middle btn main-font">About Me</a>
         </div>
     </div>
@@ -100,31 +100,124 @@
 </div>
 <div id="research" class="window">
     <h2 class="pt-5 text-center main-font">Research and Experience</h2>
-    <div class="card text-center w-75 h-75 mx-auto mt-3">
+    <div class="card text-center w-75 h-75 mx-auto mt-3 rounded">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs justify-content-center">
-                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#r1">Graduate Teaching Assistant</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r2">Dr. Hnatyshyn Lab</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r3">Dr. Linksvayer Lab</a></li>
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#r1">Graduate Teaching
+                    Assistant</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r2">Dr. Seal & Dr. Kellner Lab
+                    (Collaboration)</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r3">Dr. Hnatyshyn Lab</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r4">Dr. Vojvodic Lab</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r5">Dr. Krufka & Dr. Travis Lab</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r5">Dr. Linksvayer Lab</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#r6">Dr. Krufka & Dr. Travis Lab</a>
+                </li>
             </ul>
         </div>
         <div class="card-body tab-content">
-            <div id="r1" class="tab-pane active">
-                <p>test1</p>
+            <div id="r1" class="px-5 h-100 tab-pane active">
+                <p class="text-center">Sep 2018 - May 2020</p>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="text-left">During my Master's, I worked as a Graduate Teaching Assistant. During this
+                            time, I investigated machine learning and predictive modeling approaches for predicting a
+                            compound's potential for drug-drug interactions. Specifically, I developed models to predict
+                            a compound's ability to inhibit CYP3A4. I leveraged <i>in vitro</i> data on 10,000s of
+                            compounds to develop and test models such as logistic regression, random forests, support
+                            vector machine, and neural network. I also developed two novel convolutional approaches:
+                            SMILES string auto-extraction and 2D structure auto-extraction. The advantages of the novel
+                            convolutional approaches are their ability to learn features from a compound's SMILES
+                            string, eliminating extensive feature engineering. The published thesis is available
+                            <a href="">here</a>.</p>
+                        <p class="text-left">I also instructed <i>Intro to Scientific Programming</i> and the lab
+                            portion of <i>Intro to Object-Oriented Programming</i>. While teaching
+                            <i>Intro to Scientific Programming</i>, I leveraged difficult coursework into a flipped
+                            workshop lecture with clear progressions. Each lecture, students followed along while we
+                            collectively learned and used a new concept and set of tools. In
+                            <i>Intro to Object-Oriented Programming</i>, I helped guide students in small groups or 1 on
+                            1 to understand and complete their programming labs. I emphasized smart, efficient, and
+                            readable programming techniques.</p>
+                    </div>
+                    <img class="col-4" src="static/img/thesis-workflow.png" alt=""/>
+                </div>
             </div>
-            <div id="r2" class="tab-pane fade">
-                <p>test2</p>
+            <div id="r2" class="px-5 h-100 tab-pane fade">
+                <div class="h-25">
+                    <p class="text-center">Apr 2019 - Dec 2019</p>
+                    <p class="text-left">I collaborated with the Dr. Seal & Dr. Kellner Lab to develop species distribution
+                        models for six North American fungal farming ant species. To assist in this research, I developed an
+                        R package called <a href="https://github.com/jscavetta95/maxentools">maxentools</a>. This package
+                        is a set of high level functions to provide easy training and evaluation of Maxent species
+                        distribution models. Using this package, we predicted species distributions from collected
+                        occurrence points amongst the six species. The models support the hypothesis that climate is a
+                        limiting factor in each species distribution and that these species have adapted to temperatures
+                        and water availability differently. The peer-reviewed, published manuscript is available
+                        <a href="https://academic.oup.com/jinsectscience/article/19/6/24/5681299">here</a>.</p>
+                </div>
+                <div class="h-75">
+                    <div class="w-50 h-100 float-left">
+                        <img class="h-100" src="static/img/occ_points.jpeg" alt=""/>
+                    </div>
+                    <div class="w-50 h-100 float-right">
+                        <img class="h-100" src="static/img/dist.jpeg" alt=""/>
+                    </div>
+                </div>
             </div>
-            <div id="r3" class="tab-pane fade">
-                <p>test3</p>
+            <div id="r3" class="px-5 h-100 tab-pane fade">
+                <div class="h-50">
+                    <p class="text-center">Oct 2016 - Aug 2018</p>
+                    <p class="text-left mb-0">The projects that I worked on under the Dr. Hnatyshyn Lab were funded by Bristol
+                        Myers Squibb. Here, I developed many applications and algorithms to speed up various tasks in drug
+                        discovery. Some examples include:
+                    <ol class="text-left">
+                        <li>Extracting data from Thermo Fisher RAW files</li>
+                        <li>Investigating the Allotrope Framework for efficient storage of large, multidimensional LC-MS data</li>
+                        <li>Automated metabolite retrieval using API calls from various databases</li>
+                        <li>LC-MS peak matching algorithms</li>
+                        <li>R server implementation to handle metabolomic data analysis</li>
+                    </ol>
+                    <p class="text-left">From these projects, I have gained a great deal of experience combining computer science, biology,
+                        and chemistry. My thesis was also conducted under this lab.
+                    </p>
+                </div>
+                <div class="h-50">
+                    <div class="h-100 w-50 float-left">
+                        <img class="h-100" src="static/img/adf.png" alt=""/>
+                    </div>
+                    <div class="h-100 w-50 float-right">
+                        <img class="h-100" src="static/img/peak.png" alt=""/>
+                    </div>
+                </div>
             </div>
-            <div id="r4" class="tab-pane fade">
-                <p>test4</p>
+            <div id="r4" class="px-5 h-100 tab-pane fade">
+                <p class="text-center">May 2015 - Aug 2018</p>
+                <div class="row" style="height: 92%">
+                    <p class="text-left p-0" style="width: 40%">Work in progress</p>
+                    <div style="width: 30%">
+                        <img class="w-100" src="static/img/honeyBeeSTEM.png" alt="" />
+                    </div>
+                    <div style="width: 30%">
+                        <img class="w-100" src="static/img/temnoSTEM.png" alt="" />
+                    </div>
+                </div>
             </div>
-            <div id="r5" class="tab-pane fade">
-                <p>test5</p>
+            <div id="r5" class="px-5 h-100 tab-pane fade">
+                <p class="text-center">Feb 2018 - May 2018</p>
+                <div class="row" style="height: 92%">
+                    <p class="text-left" style="width: 60%">Work in progress</p>
+                    <div class="h-100" style="width: 40%">
+                        <img class="h-100" src="static/img/deg_counts.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div id="r6" class="px-5 h-100 tab-pane fade">
+                <p class="text-center">Oct 2014 - May 2015</p>
+                <div class="row" style="height: 92%">
+                    <p class="text-left" style="width: 70%">Work in progress</p>
+                    <div class="h-100" style="width: 30%">
+                        <img class="h-100" src="static/img/sticklePoster.png" alt="" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -133,42 +226,30 @@
     </div>
 </div>
 <div id="projects" class="window">
-    <h2 class="pt-5 text-center main-font">Projects and Publications</h2>
+    <h2 class="pt-5 text-center main-font">Other Projects</h2>
     <div class="row w-75 h-75 mx-auto">
         <nav class="nav flex-column col-4 bg-light border border-dark pr-0">
-            <a class="nav-link active" data-toggle="tab" href="#p1">Predictive Models for Drug-Drug Interactions</a>
-            <a class="nav-link" data-toggle="tab" href="#p2">Ecological Niche Modeling of Fungus-Farming Ants</a>
-            <a class="nav-link" data-toggle="tab" href="#p3">Allotrope File Conversion Tool</a>
-            <a class="nav-link" data-toggle="tab" href="#p4">LC-MS Peak Alignment</a>
+            <a class="nav-link active" data-toggle="tab" href="#p1">NetworkViz</a>
+            <a class="nav-link" data-toggle="tab" href="#p2">COVID-19 US County Spread</a>
+            <a class="nav-link" data-toggle="tab" href="#p3">Honey Production Models</a>
+            <a class="nav-link" data-toggle="tab" href="#p4">Apollo Artists</a>
             <a class="nav-link" data-toggle="tab" href="#p5">Card Game A.I. System</a>
-            <a class="nav-link" data-toggle="tab" href="#p6">Gut Microbial Effects on Honey Bees</a>
-            <a class="nav-link" data-toggle="tab" href="#p7">Social Disease Resistance in Acorn Ants</a>
-            <a class="nav-link" data-toggle="tab" href="#p8">Neuromast Proliferation of Larval Stickleback</a>
         </nav>
         <div class="tab-content col-8 bg-light border border-dark border-left-0 p-5">
             <div id="p1" class="tab-pane active">
-                <p>test1</p>
+                <p>Work in progress</p>
             </div>
             <div id="p2" class="tab-pane fade">
-                <p>test2</p>
+                <p>Work in progress</p>
             </div>
             <div id="p3" class="tab-pane fade">
-                <p>test3</p>
+                <p>Work in progress</p>
             </div>
             <div id="p4" class="tab-pane fade">
-                <p>test4</p>
+                <p>Work in progress</p>
             </div>
             <div id="p5" class="tab-pane fade">
-                <p>test5</p>
-            </div>
-            <div id="p6" class="tab-pane fade">
-                <p>test5</p>
-            </div>
-            <div id="p7" class="tab-pane fade">
-                <p>test5</p>
-            </div>
-            <div id="p8" class="tab-pane fade">
-                <p>test5</p>
+                <p>Work in progress</p>
             </div>
         </div>
     </div>
@@ -178,8 +259,8 @@
 </div>
 <div id="about" class="window">
     <h2 class="pt-5 text-center main-font">About Me</h2>
-    <div class="h-75">
-
+    <div class="w-75 h-75 mx-auto bg-light p-5 rounded">
+        <p>Work in progress</p>
     </div>
     <div class="w-25 mx-auto mt-5">
         <a href="#main" class="btn btn-light w-100">Top</a>
